@@ -76,6 +76,8 @@ elif "/" in entrada_text:
 
 	except ValueError:
 		print("Los valores numéricos no están bien introducidos")
+	except ZeroDivisionError:
+		print("No se pueden realizar divisiones entre cero")
 
 elif "^" in entrada_text:
 	numeros = entrada_text.split("^")
